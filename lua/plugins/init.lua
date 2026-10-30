@@ -1,35 +1,3 @@
-return {
-  {
-    "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
-    opts = require "configs.conform",
-  },
-
-  -- These are some examples, uncomment them if you want to see them work!
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require "configs.lspconfig"
-    end,
-  },
-
-  {
-    "williamboman/mason.nvim",
-    config = true,
-    build = ":MasonUpdate"
-  },
-
-
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
-
-  {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-       "html", "css"
-  		},
-  	},
-  },
-}
+-- Lazy imports every Lua module in this directory. Keep plugin specs in
+-- focused files; local/experimental plugins can remain independent modules.
+return {}
