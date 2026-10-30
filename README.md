@@ -22,7 +22,8 @@ For a server using stock nvim-lspconfig settings, add its name to `servers` in
 custom server loop. Keep plugin declarations separate from server settings.
 
 `lua/plugins/benzene.lua` is an optional local plugin; it only loads when its
-configured checkout exists.
+configured checkout exists. See [Benzene setup](docs/benzene.md) for build
+instructions and the `BENZENE_NVIM_DIR` override.
 
 ## Rust
 
